@@ -87,6 +87,9 @@
 (setq recentf-max-menu-items 25)
 (global-set-key "\C-x\ \C-r" 'recentf-open-files)
 
+;; use C-q to translate english to chinese
 (global-set-key (kbd "C-q") 'youdao-dictionary-search-at-point+)
+
+
 
 
