@@ -25,6 +25,12 @@
 			    ;; theme
 			    monokai-theme
 			    solarized-theme
+			    ;; youdao
+			    youdao-dictionary
+			    chinese-word-at-point
+			    popup
+			    names
+			    pos-tip
 			    ) "Default packages")
 (setq package-selected-packages linwenbo/packages)
 
@@ -81,6 +87,6 @@
 (setq recentf-max-menu-items 25)
 (global-set-key "\C-x\ \C-r" 'recentf-open-files)
 
-
+(global-set-key (kbd "C-q") 'youdao-dictionary-search-at-point+)
 
 
