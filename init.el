@@ -15,13 +15,8 @@
 
 ;; Add Packages
 (defvar linwenbo/packages '(
-			    ;; auto completion
-			    company
-			    ;; editor
-			    hungry-delete
-			    swiper
-			    counsel
-			    smartparens
+			    ;; helm
+			    helm
 			    ;; theme
 			    monokai-theme
 			    solarized-theme
@@ -68,14 +63,10 @@
   (load-file "~/.emacs.d/init.el"))
 (global-set-key (kbd "<f3>") 'load-my-init-file)
 
-;; enable global auto-completion
-(global-company-mode t)
 ;; set cursor type to 'bar
 (setq-default cursor-type 'bar)
 ;; disable auto backup-file
 (setq make-backup-files nil)
-;; delete select word when input
-(delete-selection-mode t)
 ;; fullscreen when start-up
 (setq initial-frame-alist (quote ((fullscreen . maximized))))
 
